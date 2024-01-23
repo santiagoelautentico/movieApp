@@ -18,7 +18,16 @@ export function LoginForm({ setUser }) {
 
   return (
     <section className="login_container">
+      <img src="../public/images/kinetricaLogoLogin.png" alt="Logo" className="logoLogin" />
+      <div className="backgroundViolet"></div>
       <form action="" onSubmit={handleSubmit} className="form">
+        <div className="titleLogin_container">
+          <p className="titleLogin">LOGIN</p>
+          <h2 className="exitFakeButton">X</h2>
+          <div className="topColor"></div>
+          <div className="leftColor"></div>
+          <div className="bottomColor"></div>
+        </div>
         <article>
           <div>
             <h2>Email</h2>
@@ -43,9 +52,12 @@ export function LoginForm({ setUser }) {
             LOGIN
             <div className="bottomButtonColor"></div>
           </button>
+          <p className="remember">I dont remember my password</p>
         </article>
       </form>
-      {error && <p>Todos los campos son obligatorios</p>}
+      {error && (
+        <p className="errorMensage">Todos los campos son obligatorios</p>
+      )}
     </section>
   );
 }
