@@ -11,6 +11,8 @@
 .login_container {
   height: 100vh;
   background: url(../public/images/fondo3K.jpg);
+  background-color: rgb(31, 31, 31);
+  background-blend-mode: soft-light;
   background-size: cover;
 }
 .form {
@@ -21,7 +23,7 @@
   flex-direction: column;
 }
 article {
-  background-color: white;
+  background-color: rgb(160, 160, 160);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -39,6 +41,7 @@ input {
   background-color: #d9d9d9;
   border-radius: 5px;
   padding: 0.5em;
+  font-size: 1em;
 }
 .buttonLogin {
   height: 2em;
@@ -108,7 +111,7 @@ input {
   align-items: center;
 }
 .backgroundViolet {
-  height: 49vh;
+  height: 51vh;
   background-color: #c537f8;
   width: 41rem;
   z-index: 1;
@@ -133,14 +136,14 @@ input {
   color: white;
   font-size: 1.5em;
 }
-.exitFakeButton{
-  background-color: #D9D9D9;
+.exitFakeButton {
+  background-color: #d9d9d9;
   padding-block: 0.1em;
   padding-inline: 0.2em;
   color: black;
   border: 2px solid black;
 }
-.logoLogin{
+.logoLogin {
   position: fixed;
   height: 25vh;
   top: 8rem;
