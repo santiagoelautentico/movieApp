@@ -1,6 +1,15 @@
+import { useFetch } from "../useFetch";
 export function ListCardFunction() {
+  const { data } = useFetch(
+    "https://movieapp-e34d0-default-rtdb.firebaseio.com/movies"
+  );
   return (
-    <h2>HOla</h2>
+    <article>
+      <ul>
+        {data?.map((movies) => (
+          <li key={movies.id}>{movies.name}</li>
+        ))}
+      </ul>
+    </article>
   );
 }
-export default ListCardFunction;

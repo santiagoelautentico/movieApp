@@ -28,7 +28,7 @@ export function LoginForm({ setUser }) {
           <div className="leftColor"></div>
           <div className="bottomColor"></div>
         </div>
-        <article>
+        <article className="login_inside_container">
           <div>
             <h2>Email</h2>
             <input

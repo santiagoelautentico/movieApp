@@ -1,6 +1,9 @@
 import { ListCardFunction } from "./ListCardFunction";
 export function Home() {
-   <ListCardFunction />;
+   return (
+     <>
+       <ListCardFunction />
+     </>
+   );
+ 
 }
-
-export default Home

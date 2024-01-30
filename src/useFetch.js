@@ -1,12 +1,12 @@
 import { useState, useEffect } from "react";
 
 export function useFetch(url) {
-  const [data, serData] = useState(null);
+  const [data, setData] = useState(null);
 
   useEffect(() => {
     fetch(url)
       .then((response) => response.json())
-      .then((data) => serData(data));
+      .then((data) => setData(data));
   }, []);
 
   return { data };
