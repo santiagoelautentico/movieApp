@@ -1,7 +1,6 @@
+import { ListCardFunction } from "./ListCardFunction";
 export function Home() {
-    return(
-        <div>Bienvenido</div>
-    )
+   <ListCardFunction />;
 }
 
 export default Home
