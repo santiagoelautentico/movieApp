@@ -1,0 +1,39 @@
+body {
+  background-color: #181818;
+}
+.headerContainer {
+  background: url(../public/images/regularBackground.png);
+  height: 75vh;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.logoHeader {
+  width: 75%;
+}
+.infoMovieContainer {
+  width: 45%;
+  padding-left: 3em;
+}
+.plotHeader {
+  font-size: 1.2em;
+  color: white;
+}
+.play {
+  height: 1.8em;
+  font-size: 2em;
+  background-color: #a70fdd;
+  color: white;
+  border: solid 2px black;
+  width: 30%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1em;
+}
+.logoPlay{
+    height: 2rem;
+}

@@ -10,7 +10,7 @@
 }
 .login_container {
   height: 100vh;
-  background: url(../public/images/fondo3K.jpg);
+  background: url(/images/fondo3K.jpg);
   background-color: rgb(31, 31, 31);
   background-blend-mode: soft-light;
   background-size: cover;

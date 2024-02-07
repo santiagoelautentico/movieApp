@@ -18,7 +18,7 @@ export function LoginForm({ setUser }) {
 
   return (
     <section className="login_container">
-      <img src="../public/images/kinetricaLogoLogin.png" alt="Logo" className="logoLogin" />
+      <img src="/images/kinetricaLogoLogin.png" alt="Logo" className="logoLogin" />
       <div className="backgroundViolet"></div>
       <form action="" onSubmit={handleSubmit} className="form">
         <div className="titleLogin_container">
