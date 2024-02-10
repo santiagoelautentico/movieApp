@@ -8,6 +8,7 @@ body {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  background-size: cover;
 }
 .logoHeader {
   width: 75%;
@@ -19,6 +20,11 @@ body {
 .plotHeader {
   font-size: 1.2em;
   color: white;
+}
+.listMovies{
+  white-space: nowrap;
+  overflow: auto;
+  scrollbar-width: none;
 }
 .play {
   height: 1.8em;
@@ -36,4 +42,15 @@ body {
 }
 .logoPlay{
     height: 2rem;
+}
+.blockCards{
+  margin: auto;
+  padding-block: 3em;
+  margin-left: 5em;
+  overflow: hidden;
+}
+.blockCards > h2{
+  padding-bottom: 1em;
+  font-size: 2em;
+  color: white;
 }

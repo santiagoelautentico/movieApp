@@ -1,4 +1,6 @@
 import { Clasics } from "./Clasics";
+import { Anime } from "./Anime";
+import { Cartoon } from "./Cartoon";
 import "./home.css";
 export function Home() {
   return (
@@ -23,6 +25,8 @@ export function Home() {
         </div>
       </article>
       <Clasics />
+      <Anime />
+      <Cartoon />
     </>
   );
 }
