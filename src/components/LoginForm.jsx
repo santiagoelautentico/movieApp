@@ -18,7 +18,11 @@ export function LoginForm({ setUser }) {
 
   return (
     <section className="login_container">
-      <img src="/images/kinetricaLogoLogin.png" alt="Logo" className="logoLogin" />
+      <img
+        src="/images/kinetricaLogoLogin.png"
+        alt="Logo"
+        className="logoLogin"
+      />
       <div className="backgroundViolet"></div>
       <form action="" onSubmit={handleSubmit} className="form">
         <div className="titleLogin_container">
@@ -36,6 +40,7 @@ export function LoginForm({ setUser }) {
               placeholder="Email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
+              className="inputLogin"
             />
           </div>
           <div>
@@ -45,6 +50,7 @@ export function LoginForm({ setUser }) {
               placeholder="Password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
+              className="inputLogin"
             />
           </div>
           <button className="buttonLogin" type="submit">

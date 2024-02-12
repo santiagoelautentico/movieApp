@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+.hamburguer {
+  position: relative;
+  display: block;
+  width: 30px;
+  cursor: pointer;
+
+  appearance: none;
+  background: none;
+  outline: none;
+  border: none;
+}
+.hamburguer .bar,
+.hamburguer::after,
+.hamburguer::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 3.5px;
+  background: #fff;
+  margin: 5px 0px;
+  transition: 0.4s;
+}
+
+.hamburguer.is-active::before {
+  transform: rotate(-45deg) translate(-7px, 5px);
+}
+.hamburguer.is-active::after {
+  transform: rotate(45deg) translate(-7px, -6px);
+}
+.backgroundHamburguerGray{
+    background-color: gray;
+    padding: 0.3rem;
+    border: solid 1px white;
+}
+.backgroundHamburguerRed{
+    background-color: red;
+    padding: 0.3rem;
+    border: solid 1px white;
+}
+.is-active .bar {
+  opacity: 0;
+}
+.firstSecctionNav {
+  display: flex;
+  align-items: center;
+  gap: 2em;
+}
+.headerApp {
+  display: flex;
+  color: white;
+  justify-content: space-between;
+  padding: 1em;
+  align-items: center;
+  font-size: 1.4em;
+  position: fixed;
+  width: 100%;
+  z-index: 11111;
+}
+.logoNav {
+  position: absolute;
+  top: 2.5rem;
+  width: 3%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+nav ul {
+  display: flex;
+  gap: 1em;
+}
+nav ul li a{
+    color: #fff;
+}
+.rigthSecctionNav{
+    display: flex;
+    gap: 2em;
+    width: 30%;
+
+}
+.inputContainer{
+    display: flex;
+    width: 100%;
+    position: relative;
+    align-items: center;
+}
+.inputContainer input{
+    width: 90%;
+    height: 3em;
+}
+.search{
+    background: #190482;
+    border: 1px solid black;
+    height: 3em;
+    border-radius: 50px;
+    width: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 0;
+}
+.backgroundHeader{
+    background-color: #1a2edd;
+    transition: 0.2s;
+}
+.headerDetailShow{
+    position: absolute;
+    height: 5px;
+    width: 100%;
+}
+.headerDetailShow.top{
+    background-color: #2b3eed;
+    top: 1px;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    left: 0;
+}
+.headerDetailShow.bottom{
+    background-color: #1326cf;
+    bottom: 1px;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    left: 0;
+}
+.headerDetailOff{
+    display: none;
+}

@@ -1,10 +1,12 @@
 import { Clasics } from "./Clasics";
 import { Anime } from "./Anime";
 import { Cartoon } from "./Cartoon";
+import { Navbar } from "./Navbar";
 import "./home.css";
 export function Home() {
   return (
     <>
+    <Navbar />
       <article className="headerContainer">
         <div className="infoMovieContainer">
           <img

@@ -34,7 +34,7 @@
   position: relative;
   border: 2px solid black;
 }
-input {
+.inputLogin {
   width: 30em;
   height: 3em;
   border: black 1px solid;
