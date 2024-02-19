@@ -1,0 +1,23 @@
+.recomended_container {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 15px;
+}
+.recomended_title {
+  font-size: 2em;
+  font-weight: 400;
+}
+.recomended_img {
+  width: 10rem;
+  border-radius: 15px;
+  border: solid black 1px;
+}
+.recomended_movieTitle {
+  font-weight: 400;
+}
+.movie_block {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-top: 2rem;
+}

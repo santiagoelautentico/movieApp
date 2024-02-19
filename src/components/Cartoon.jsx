@@ -10,7 +10,7 @@ export function Cartoon() {
       <ul className="listMovies">
         {data?.map((cartoon) => (
           <li key={cartoon.id}>
-            <img src={cartoon.img} alt="" className="cardPicture" />
+            <img src={cartoon.img} alt="" className="movie_image_small" />
           </li>
         ))}
       </ul>

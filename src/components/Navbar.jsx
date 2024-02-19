@@ -27,17 +27,13 @@ export function Navbar() {
       <div
         className={background ? "headerDetailShow bottom" : "headerDetailOff"}
       ></div>
-      <img
-        src="../public/images/play.png"
-        alt="KineticaLogo"
-        className="logoNav"
-      />
+      <img src="images/play.png" alt="KineticaLogo" className="logoNav" />
       <div className="firstSecctionNav">
         <img src="" className="userLogo" />
         <nav>
           <ul>
             <li>
-              <a href="">Movies</a>
+              <a href="http://localhost:5173/">Movies</a>
             </li>
             <li>
               <a href="">Series</a>
@@ -55,7 +51,12 @@ export function Navbar() {
             <AiOutlineSearch size={"1.8em"} />
           </div>
         </div>
-        <div onClick={buttonClicked} className={`${clicked ? "backgroundHamburguerRed" : "backgroundHamburguerGray"}`}>
+        <div
+          onClick={buttonClicked}
+          className={`${
+            clicked ? "backgroundHamburguerRed" : "backgroundHamburguerGray"
+          }`}
+        >
           <button
             onClick={buttonClicked}
             className={`${clicked ? "hamburguer is-active" : "hamburguer"}`}

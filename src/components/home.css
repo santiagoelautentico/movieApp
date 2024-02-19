@@ -2,7 +2,7 @@ body {
   background-color: #181818;
 }
 .headerContainer {
-  background: url(../public/images/regularBackground.png);
+  background: url(/images/regularBackground.png);
   height: 75vh;
   background-position: center;
   display: flex;

@@ -1,0 +1,8 @@
+@font-face {
+  font-family: fontUnic;
+  src: url(/Perfect-DOS-VGA-437.woff);
+}
+
+* {
+  font-family: fontUnic;
+}

@@ -1,17 +1,15 @@
 import { Clasics } from "./Clasics";
 import { Anime } from "./Anime";
 import { Cartoon } from "./Cartoon";
-import { Navbar } from "./Navbar";
 import "./home.css";
 export function Home() {
   return (
     <>
-    <Navbar />
       <article className="headerContainer">
         <div className="infoMovieContainer">
           <img
             className="logoHeader"
-            src="../public/images/Regular-show-the-movie-logo.png"
+            src="/images/Regular-show-the-movie-logo.png"
           />
           <p className="plotHeader">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet vel
@@ -20,7 +18,7 @@ export function Home() {
           </p>
           <button className="play">
             <div className="topButtonColor"></div>
-            <img src="../public/images/play.png" className="logoPlay" alt="" />
+            <img src="/images/play.png" className="logoPlay" alt="" />
             PLAY
             <div className="bottomButtonColor"></div>
           </button>

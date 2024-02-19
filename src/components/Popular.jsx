@@ -6,11 +6,11 @@ export function Popular() {
   );
   return (
     <article className="blockCards">
-      <h2>THE CLASISCS</h2>
+      <h2>Popular</h2>
       <ul className="listMovies">
-        {data?.map((clasic) => (
-          <li key={clasic.id}>
-            <img src={clasic.img} alt="" className="cardPicture" />
+        {data?.map((popular) => (
+          <li key={popular.id}>
+            <img src={popular.img} alt="" className="cardPicture" />
           </li>
         ))}
       </ul>
