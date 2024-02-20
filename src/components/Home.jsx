@@ -24,9 +24,11 @@ export function Home() {
           </button>
         </div>
       </article>
-      <Clasics />
-      <Anime />
-      <Cartoon />
+      <section className="background_home">
+        <Clasics />
+        <Anime />
+        <Cartoon />
+      </section>
     </>
   );
 }

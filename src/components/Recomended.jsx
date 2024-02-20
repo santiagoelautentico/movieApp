@@ -3,6 +3,7 @@ export const Recomended = () => {
   return (
     <>
       <article className="recomended_container">
+        <img src="/images/Windows-Media-Player-icon.png" className="icon_play" alt="icon" />
         <h1 className="recomended_title">RECOMENDED MOVIES</h1>
         <ul>
           <li>

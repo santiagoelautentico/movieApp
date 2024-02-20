@@ -3,6 +3,11 @@
   margin: 0;
   box-sizing: border-box;
 }
+.background {
+  background: url("/images/backMovie.png");
+  background-size: cover;
+  height: 100vh;
+}
 .main_container {
   width: 1280px;
   margin: auto;
