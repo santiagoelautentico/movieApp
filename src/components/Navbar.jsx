@@ -27,7 +27,7 @@ export function Navbar() {
       <div
         className={background ? "headerDetailShow bottom" : "headerDetailOff"}
       ></div>
-      <img src="images/play.png" alt="KineticaLogo" className="logoNav" />
+      <img src="/images/play.png" alt="KineticaLogo" className="logoNav" />
       <div className="firstSecctionNav">
         <img src="" className="userLogo" />
         <nav>

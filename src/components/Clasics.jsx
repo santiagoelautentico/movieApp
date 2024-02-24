@@ -12,8 +12,18 @@ export function Clasics() {
       <ul className="listMovies">
         {data?.map((clasic) => (
           <Link to={`movies/clasics/${clasic.id}`}>
-            <li key={clasic.id}>
-              <img src={clasic.img} alt="" className="movie_image_small image" />
+            <li key={clasic.id} className="card">
+              <img
+                src={clasic.img}
+                alt=""
+                className="movie_image_small image"
+              />
+              <div>
+                <div>
+                  
+                </div>
+              </div>
+              <p>Company - 2001</p>
             </li>
           </Link>
         ))}

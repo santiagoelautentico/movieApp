@@ -4,7 +4,6 @@
   box-sizing: border-box;
 }
 .recomended_container {
-  background-color: white;
   padding: 1.5rem;
   border-radius: 15px;
   position: relative;
@@ -32,4 +31,38 @@
   height: 7rem;
   top: -3rem;
   right: -3rem;
+}
+
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
+  .recomended_title {
+    font-size: 1.5em;
+    font-weight: 400;
+  }
+  .recomended_img {
+    width: 8rem;
+    border-radius: 15px;
+    border: solid black 1px;
+  }
+  .recomended_movieTitle {
+    font-weight: 400;
+  }
+  .movie_block {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-top: 2rem;
+  }
+  .icon_play {
+    position: absolute;
+    height: 5rem;
+    top: -2rem;
+    right: -1rem;
+  }
+  .recomended_container {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 15px;
+    position: relative;
+    height: fit-content;
+  }
 }

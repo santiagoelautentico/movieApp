@@ -1,8 +1,10 @@
 import { Routes, Route, BrowserRouter } from "react-router-dom";
 import "./App.css";
 import { Home } from "./components/Home";
-import { WatchMovie } from "./components/WatchMovie";
+import { ClasicsMovies } from "./components/pages-movies/ClasicsMovies";
 import { Navbar } from "./components/Navbar";
+import { AnimesMovies } from "./components/pages-movies/AnimesMovies";
+import { CartoonMovies } from "./components/pages-movies/CartoonMovies";
 //import { LoginForm } from "./components/LoginForm";
 //import { Home } from './components/Home'
 //import { useState } from 'react'
@@ -16,7 +18,9 @@ function App() {
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/movies/clasics/:id" element={<WatchMovie />} />
+            <Route path="/movies/clasics/:id" element={<ClasicsMovies />} />
+            <Route path="/movies/animes/:id" element={<AnimesMovies />} />
+            <Route path="/movies/cartoon/:id" element={<CartoonMovies />} />
           </Routes>
         </BrowserRouter>
       </div>

@@ -43,6 +43,7 @@
   width: 700px;
   height: 470px;
   position: relative;
+  border-radius: 8px;
 }
 .img_container {
   display: flex;
@@ -116,4 +117,24 @@
   width: 100%;
   left: 0;
   height: 5px;
+}
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
+  .art_container {
+    background-color: #c537f8;
+    border: black solid 4px;
+    width: 650px;
+    height: 400px;
+    position: relative;
+  }
+  .movie_image_larger {
+    width: 97%;
+    height: 300px;
+    border: black solid 4px;
+  }
+  .plot {
+    width: 650px;
+    font-size: 1.2em;
+    margin-top: 1rem;
+    color: white;
+  }
 }
