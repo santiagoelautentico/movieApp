@@ -1,0 +1,88 @@
+/*:root {
+  --timing: 500ms;
+}
+
+body {
+  perspective: 1000px;
+}
+.backAlbum {
+  width: 300px;
+  position: relative;
+  height: 600px;
+  transition: rotate var(--timing) ease;
+  display: flex;
+  justify-content: center;
+  transform-style: preserve-3d;
+}
+.bg-image {
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+.backAlbum:hover {
+  rotate: x 30deg;
+}
+.backAlbum::after {
+  content: "";
+  position: absolute;
+  inset: 80% 2rem 2rem;
+  translate: 0;
+  transform: translateZ(-100px);
+  filter: blur(1.5rem);
+  background-color: black;
+  z-index: 1;
+  transition: rotate var(--timing) translate var(--timing);
+}
+.backAlbum:hover::after {
+  translate: 0 90px;
+  rotate: x -25deg;
+}
+.backAlbum::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 100;
+  background-image: radial-gradient(circle 500px, transparent 10px, black);
+  opacity: 0;
+  transition: var(--timing);
+}
+.backAlbum:hover::before {
+  opacity: 1;
+}
+
+.albums_container {
+  display: flex;
+  justify-content: space-around;
+  height: 80vh;
+}
+.front-img {
+  width: 100%;
+  opacity: 0;
+  transition: var(--timing);
+  height: 100%;
+  scale: 1.19;
+  transform-origin: bottom;
+  bottom: -2.5rem;
+}
+.logo_album,
+.front-img {
+  position: absolute;
+}
+.logo_album {
+  width: 85%;
+  margin-inline: auto;
+  inset: auto 0 -0.5rem;
+  transition: var(--timing);
+  opacity: 0;
+}
+.rick:hover .logo_album {
+  transform: translateY(-2rem) translateZ(10px);
+  rotate: x -30deg;
+  opacity: 1;
+  z-index: 100;
+}
+.backAlbum:hover .front-img {
+  opacity: 1;
+  transform: translateY(-2rem) translateZ(300000px);
+  rotate: x -30deg;
+}

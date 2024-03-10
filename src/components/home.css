@@ -21,40 +21,32 @@ body {
   width: 45%;
   padding-left: 3em;
 }
-.plotHeader {
-  font-size: 1.2em;
-  color: white;
-}
+
 .listMovies {
   white-space: nowrap;
-  overflow: auto;
+  overflow-x: auto;
   scrollbar-width: none;
+  height: 35vh;
 }
-.play {
-  height: 1.8em;
-  font-size: 2em;
-  background-color: #a70fdd;
-  color: white;
-  border: solid 2px black;
-  width: 30%;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 0.5rem;
-  margin-top: 1em;
-}
-.logoPlay {
-  height: 2rem;
-}
+
 .blockCards {
   margin: auto;
-  padding-block: 3em;
   margin-left: 5em;
   overflow: hidden;
+  margin-bottom: 2rem;
 }
 .blockCards > h2 {
   padding-bottom: 1em;
   font-size: 2em;
   color: white;
+}
+.clasic-container {
+  padding-top: 3rem;
+}
+
+.backgroundCharacter {
+  width: 350px;
+}
+.logo {
+  width: 100%;
 }

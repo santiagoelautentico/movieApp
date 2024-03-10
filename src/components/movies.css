@@ -1,13 +1,13 @@
-*{
-    list-style: none;
+* {
+  list-style: none;
 }
-.listMovies{
-    display: flex;
-    gap: 1.5rem;
+.listMovies {
+  display: flex;
+  gap: 2.5em;
 }
-.movie_image_small{
-    width: 350px;
-    height: 200px;
-	object-fit: cover;
-    background-position: center;
+.movie_image_small {
+  width: 350px;
+  height: 200px;
+  object-fit: cover;
+  background-position: center;
 }

@@ -2,11 +2,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-weight: 400;
 }
 .recomended_container {
   padding: 1.5rem;
   border-radius: 15px;
   position: relative;
+  background-color: white;
 }
 .recomended_title {
   font-size: 2em;

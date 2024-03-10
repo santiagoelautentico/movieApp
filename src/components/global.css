@@ -19,7 +19,39 @@
 }
 
 .card {
-  background-color: black;
-  border: 2px solid #c537f8;
   color: white;
+  transition: transform 500ms ease;
+}
+
+.icon {
+  height: 3rem;
+}
+.card:hover .detailsMovie {
+  visibility: visible;
+}
+.card:hover {
+  background-color: black;
+  transform: scale(1.08);
+}
+.detailsMovie {
+  padding-inline: 1.4rem;
+  padding-top: 0.5rem;
+  visibility: hidden;
+}
+
+.iconsRow {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+.topDetails-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.match {
+  color: #05ff00;
+}
+.detailsMovie p {
+  padding-bottom: 0.5rem;
 }
