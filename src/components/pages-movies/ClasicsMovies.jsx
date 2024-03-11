@@ -30,7 +30,7 @@ export function ClasicsMovies() {
                     </div>
                     <div className="img_container">
                       <img
-                        className="movie_image_larger image"
+                        className="movie_image_larger image thumbnail"
                         src={movie.img}
                         alt=""
                       />

@@ -2,6 +2,8 @@ import { Link } from "react-router-dom";
 import { useFetch } from "../useFetch";
 import "./global.css";
 import "./movies.css";
+
+
 export function Clasics() {
   const { data } = useFetch(
     "https://private-b5c8a7-moviesapp12.apiary-mock.com/movies/clasics"

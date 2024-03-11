@@ -1,9 +1,3 @@
-.movie_image_small {
-  view-transition-name: image;
-}
-.movie_image_larger {
-  view-transition-name: image;
-}
 ::view-transition-old(image),
 ::view-transition-new(image) {
   mix-blend-mode: normal;
@@ -21,6 +15,7 @@
 .card {
   color: white;
   transition: transform 500ms ease;
+  overflow: hidden;
 }
 
 .icon {
@@ -54,4 +49,15 @@
 }
 .detailsMovie p {
   padding-bottom: 0.5rem;
+}
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
+  .icon {
+    height: 2.5rem;
+  }
+  .card:hover {
+    background-color: black;
+  }
+  .listMovies{
+    height: 45vh;
+  }
 }

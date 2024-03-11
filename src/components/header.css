@@ -25,7 +25,11 @@
   position: absolute;
   z-index: 11;
   left: 50px;
-  top: 30%;
+  top: 20%;
+  animation: moveTwo;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-delay: 5s;
 }
 .plotHeader {
   width: 50%;
@@ -46,23 +50,88 @@
   margin-top: 1em;
   padding: 1.5rem;
 }
+.play_more {
+  height: 1.8em;
+  font-size: 2em;
+  background-color: #66666660;
+  color: white;
+  border: solid 2px black;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1em;
+  padding: 1.5rem;
+}
+.topButtonColor2 {
+  width: 100%;
+  height: 5px;
+  top: 0;
+  background-color: #66666674;
+  position: absolute;
+}
+.bottomButtonColor2 {
+  width: 100%;
+  height: 5px;
+  bottom: 0;
+  background-color: #626262ac;
+  position: absolute;
+}
 .logoPlay {
   height: 2rem;
 }
 .bottonsHeader {
   display: flex;
   gap: 2em;
+  font-size: 0.8em;
 }
 .headerLogo {
   animation: move;
   animation-duration: 2s;
+  animation-delay: 5s;
+  animation-fill-mode: forwards;
+  height: 280px;
 }
-
+.headerText{
+  color: white;
+  width: 50%;
+  font-size: 1.2em;
+  animation: text;
+  animation-duration: 0.5ms ease;
+  animation-delay: 5s;
+  animation-fill-mode: forwards;
+}
 @keyframes move {
   from {
-    transform: scale();
+    height: 280px;
   }
   to {
-    transform: scale(1deg);
+    height: 170px;
+  }
+}
+@keyframes moveTwo {
+  from {
+    top: 20%;
+  }
+  to {
+    top: 50%;
+  }
+}
+@keyframes text {
+  from{
+    visibility: visible;
+  }
+  to{
+    visibility: hidden;
+    display: none;
+  }
+}
+
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
+  #slider-1 {
+    position: relative;
+    overflow: hidden;
+    padding: 300px;
   }
 }

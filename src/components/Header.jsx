@@ -20,6 +20,12 @@ export function Header() {
                 className="headerLogo"
                 alt=""
               />
+              <p className="headerText">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Reprehenderit pariatur a corrupti sint deleniti. Corrupti
+                similique itaque esse? Eos reiciendis molestias, voluptatem
+                laudantium ea odio nihil. Natus sunt iure accusantium.
+              </p>
               <div className="bottonsHeader">
                 <button className="play">
                   <div className="topButtonColor"></div>
@@ -27,10 +33,10 @@ export function Header() {
                   PLAY
                   <div className="bottomButtonColor"></div>
                 </button>
-                <button className="play">
-                  <div className="topButtonColor"></div>
+                <button className="play_more">
+                  <div className="topButtonColor2"></div>
                   More info
-                  <div className="bottomButtonColor"></div>
+                  <div className="bottomButtonColor2"></div>
                 </button>
               </div>
             </div>

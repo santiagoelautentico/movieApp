@@ -65,6 +65,19 @@ export function Navbar() {
           </button>
         </div>
       </div>
+      {/* <div>
+        <ul className="sidebar">
+          <li>Home</li>
+          <li>Peliculas</li>
+          <li>Series</li>
+          <li>My List</li>
+          <li>For You</li>
+          <li>Anime</li>
+          <li>Clasics</li>
+          <li>Cartoon Network</li>
+          <li>Nickelodeon</li>
+        </ul>
+      </div> */}
     </header>
   );
 }

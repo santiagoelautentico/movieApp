@@ -133,3 +133,6 @@ nav ul li a{
 .headerDetailOff{
     display: none;
 }
+.sidebar{
+  display: none;
+}
