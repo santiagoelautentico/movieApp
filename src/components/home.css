@@ -1,19 +1,11 @@
 body {
   background-color: #181818;
 }
-.background_home {
+/* .background_home {
   background: url("/images/backMovie.png");
   background-size: cover;
-}
-.headerContainer {
-  background: url(/images/regularBackground.png);
-  height: 75vh;
-  background-position: center;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  background-size: cover;
-}
+} */
+
 .logoHeader {
   width: 75%;
 }
@@ -30,9 +22,11 @@ body {
 
 .blockCards {
   margin: auto;
-  margin-left: 5em;
+  padding-left: 5em;
   overflow: hidden;
   margin-bottom: 2rem;
+  z-index: 10000;
+  position: relative;
 }
 .blockCards > h2 {
   padding-bottom: 1em;
@@ -40,7 +34,7 @@ body {
   color: white;
 }
 .clasic-container {
-  padding-top: 3rem;
+  background: linear-gradient(#ef040400, #000000fb 30%, #000000, #0000);
 }
 
 .backgroundCharacter {

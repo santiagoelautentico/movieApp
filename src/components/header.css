@@ -10,11 +10,7 @@
   flex: 1 0 100%;
   scroll-snap-align: start;
 }
-#slider-1 {
-  position: relative;
-  overflow: hidden;
-  padding: 425px;
-}
+
 .video {
   position: absolute;
   top: 0;
@@ -24,8 +20,8 @@
 .infoHeader {
   position: absolute;
   z-index: 11;
-  left: 50px;
-  top: 20%;
+  left: 5rem;
+  top: 25%;
   animation: moveTwo;
   animation-duration: 2s;
   animation-fill-mode: forwards;
@@ -34,7 +30,6 @@
 .plotHeader {
   width: 50%;
   color: white;
-  font-size: 1.5em;
 }
 .play {
   height: 1.8em;
@@ -82,6 +77,9 @@
   height: 2rem;
 }
 .bottonsHeader {
+  position: absolute;
+  bottom: 30%;
+  margin-left: 6.5em;
   display: flex;
   gap: 2em;
   font-size: 0.8em;
@@ -91,7 +89,7 @@
   animation-duration: 2s;
   animation-delay: 5s;
   animation-fill-mode: forwards;
-  height: 280px;
+  height: 200px;
 }
 .headerText{
   color: white;
@@ -102,22 +100,43 @@
   animation-delay: 5s;
   animation-fill-mode: forwards;
 }
+.control{
+  position: absolute;
+  width: 70px;
+  border-radius: 70px;
+  height: 70px;
+  background-color: #a9a9a98c;
+  right: 2rem;
+  top: 60%;
+  border: none;
+  transition: 250ms ease-out;
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+.control:hover{
+  background-color: #a9a9a9;
+}
+.buttons{
+  display: flex;
+  justify-content: space-between;
+  margin-right: 5rem;
+}
 @keyframes move {
   from {
-    height: 280px;
+    height: 200px;
   }
   to {
-    height: 170px;
+    height: 150px;
   }
 }
 @keyframes moveTwo {
   from {
-    top: 20%;
+    top: 25%;
   }
   to {
-    top: 50%;
+    top: 42%;
   }
 }
+
 @keyframes text {
   from{
     visibility: visible;
@@ -127,11 +146,14 @@
     display: none;
   }
 }
-
+.container-header{
+  height: 75vh;
+}
 @media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
-  #slider-1 {
+  .slider {
     position: relative;
     overflow: hidden;
-    padding: 300px;
+    width: 100%;
+    height: 100vh;
   }
 }
