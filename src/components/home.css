@@ -1,6 +1,7 @@
 body {
-  background-color: #181818;
+  background-color: black;
 }
+
 /* .background_home {
   background: url("/images/backMovie.png");
   background-size: cover;
@@ -9,7 +10,7 @@ body {
 .logoHeader {
   width: 75%;
 }
-.infoMovieContainer {
+/* .infoMovieContainer {
   width: 45%;
   padding-left: 3em;
 }
@@ -32,9 +33,9 @@ body {
   padding-bottom: 1em;
   font-size: 2em;
   color: white;
-}
+} */
 .clasic-container {
-  background: linear-gradient(#ef040400, #000000fb 30%, #000000, #0000);
+  background: linear-gradient(#ef040400, #000000fb 30%, #000000, #000000);
 }
 
 .backgroundCharacter {

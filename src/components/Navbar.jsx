@@ -48,7 +48,7 @@ export function Navbar() {
         <div className="inputContainer">
           <input type="text" placeholder="Search" />
           <div className="search">
-            <AiOutlineSearch size={"1.8em"} />
+            <AiOutlineSearch size={"1.8em"} className="iconSearch" />
           </div>
         </div>
         <div

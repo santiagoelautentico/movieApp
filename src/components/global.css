@@ -12,7 +12,7 @@
   mix-blend-mode: normal;
 }
 
-.card {
+/* .card {
   color: white;
   transition: transform 500ms ease;
   overflow: hidden;
@@ -60,4 +60,4 @@
   .listMovies{
     height: 45vh;
   }
-}
+} */

@@ -32,20 +32,20 @@ export function Header() {
           </p>
         </div>
         <div className="bottonsHeader">
-          <button className="play">
+          <button className="play play-violet">
             <div className="topButtonColor"></div>
             <img src="/images/play.png" className="logoPlay" alt="" />
             PLAY
             <div className="bottomButtonColor"></div>
           </button>
-          <button className="play_more">
+          <button className="play play_more">
             <div className="topButtonColor2"></div>
             More info
             <div className="bottomButtonColor2"></div>
           </button>
         </div>
         <button onClick={handleMuted} className="control">
-          <img src="/images/sound.jpg" alt="" />
+          <img src="/images/sound.jpg" className="iconControl" alt="" />
         </button>
       </div>
     </section>

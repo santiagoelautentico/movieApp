@@ -34,15 +34,15 @@
 .hamburguer.is-active::after {
   transform: rotate(45deg) translate(-7px, -6px);
 }
-.backgroundHamburguerGray{
-    background-color: gray;
-    padding: 0.3rem;
-    border: solid 1px white;
+.backgroundHamburguerGray {
+  background-color: gray;
+  padding: 0.3rem;
+  border: solid 1px white;
 }
-.backgroundHamburguerRed{
-    background-color: red;
-    padding: 0.3rem;
-    border: solid 1px white;
+.backgroundHamburguerRed {
+  background-color: red;
+  padding: 0.3rem;
+  border: solid 1px white;
 }
 .is-active .bar {
   opacity: 0;
@@ -74,65 +74,96 @@ nav ul {
   display: flex;
   gap: 1em;
 }
-nav ul li a{
-    color: #fff;
+nav ul li a {
+  color: #fff;
 }
-.rigthSecctionNav{
-    display: flex;
-    gap: 2em;
-    width: 30%;
-
+.rigthSecctionNav {
+  display: flex;
+  gap: 2em;
+  width: 30%;
 }
-.inputContainer{
-    display: flex;
-    width: 100%;
-    position: relative;
-    align-items: center;
+.inputContainer {
+  display: flex;
+  width: 100%;
+  position: relative;
+  align-items: center;
 }
-.inputContainer input{
-    width: 90%;
-    height: 3em;
+.inputContainer input {
+  width: 90%;
+  height: 3em;
 }
-.search{
+.search {
+  background: #190482;
+  border: 1px solid black;
+  height: 3em;
+  border-radius: 50px;
+  width: 3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 0;
+}
+.backgroundHeader {
+  background-color: #1a2edd;
+  transition: 0.2s;
+}
+.headerDetailShow {
+  position: absolute;
+  height: 5px;
+  width: 100%;
+}
+.headerDetailShow.top {
+  background-color: #2b3eed;
+  top: 1px;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  left: 0;
+}
+.headerDetailShow.bottom {
+  background-color: #1326cf;
+  bottom: 1px;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  left: 0;
+}
+.headerDetailOff {
+  display: none;
+}
+.sidebar {
+  display: none;
+}
+@media only screen and (max-width: 600px) {
+  nav {
+    display: none;
+  }
+  .logoNav {
+    position: absolute;
+    top: 2.8rem;
+    width: 8%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+  }
+  .search {
     background: #190482;
     border: 1px solid black;
-    height: 3em;
+    height: 2em;
     border-radius: 50px;
-    width: 3em;
+    width: 2em;
     display: flex;
     justify-content: center;
     align-items: center;
     position: absolute;
     right: 0;
-}
-.backgroundHeader{
-    background-color: #1a2edd;
-    transition: 0.2s;
-}
-.headerDetailShow{
-    position: absolute;
-    height: 5px;
-    width: 100%;
-}
-.headerDetailShow.top{
-    background-color: #2b3eed;
-    top: 1px;
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    left: 0;
-}
-.headerDetailShow.bottom{
-    background-color: #1326cf;
-    bottom: 1px;
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    left: 0;
-}
-.headerDetailOff{
-    display: none;
-}
-.sidebar{
-  display: none;
+  }
+  .iconSearch {
+    height: 60% !important;
+  }
+  .rigthSecctionNav {
+    display: flex;
+    gap: 2em;
+    width: 75%;
+  }
 }

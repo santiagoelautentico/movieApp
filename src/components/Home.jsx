@@ -8,9 +8,10 @@ export function Home() {
     <>
       <section className="background_home">
         <Header></Header>
-        <Clasics  />
-        <Anime />
-        <Cartoon />
+        <Clasics/>
+        <Anime/>
+
+        {/* <Cartoon /> */}
       </section>
     </>
   );

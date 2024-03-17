@@ -15,13 +15,13 @@
   position: absolute;
   top: 0;
   left: 0;
-  min-width: 100%;
+  max-width: 100%;
 }
 .infoHeader {
   position: absolute;
   z-index: 11;
-  left: 5rem;
-  top: 25%;
+  left: 3%;
+  top: 15%;
   animation: moveTwo;
   animation-duration: 2s;
   animation-fill-mode: forwards;
@@ -34,7 +34,6 @@
 .play {
   height: 1.8em;
   font-size: 2em;
-  background-color: #a70fdd;
   color: white;
   border: solid 2px black;
   position: relative;
@@ -45,19 +44,11 @@
   margin-top: 1em;
   padding: 1.5rem;
 }
+.play-violet {
+  background-color: #a70fdd;
+}
 .play_more {
-  height: 1.8em;
-  font-size: 2em;
   background-color: #66666660;
-  color: white;
-  border: solid 2px black;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 0.5rem;
-  margin-top: 1em;
-  padding: 1.5rem;
 }
 .topButtonColor2 {
   width: 100%;
@@ -78,8 +69,8 @@
 }
 .bottonsHeader {
   position: absolute;
-  bottom: 30%;
-  margin-left: 6.5em;
+  bottom: 35%;
+  margin-left: 3%;
   display: flex;
   gap: 2em;
   font-size: 0.8em;
@@ -89,18 +80,18 @@
   animation-duration: 2s;
   animation-delay: 5s;
   animation-fill-mode: forwards;
-  height: 200px;
+  height: 300px;
 }
-.headerText{
+.headerText {
   color: white;
   width: 50%;
-  font-size: 1.2em;
+  font-size: 1.5em;
   animation: text;
   animation-duration: 0.5ms ease;
   animation-delay: 5s;
   animation-fill-mode: forwards;
 }
-.control{
+.control {
   position: absolute;
   width: 70px;
   border-radius: 70px;
@@ -110,43 +101,45 @@
   top: 60%;
   border: none;
   transition: 250ms ease-out;
-  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
+    rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
+    rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
 }
-.control:hover{
+.control:hover {
   background-color: #a9a9a9;
 }
-.buttons{
+.buttons {
   display: flex;
   justify-content: space-between;
-  margin-right: 5rem;
+  margin-right: 3%;
 }
 @keyframes move {
   from {
-    height: 200px;
+    height: 300px;
   }
   to {
-    height: 150px;
+    height: 200px;
   }
 }
 @keyframes moveTwo {
   from {
-    top: 25%;
+    top: 15%;
   }
   to {
-    top: 42%;
+    top: 35%;
   }
 }
 
 @keyframes text {
-  from{
+  from {
     visibility: visible;
   }
-  to{
+  to {
     visibility: hidden;
     display: none;
   }
 }
-.container-header{
+.container-header {
   height: 75vh;
 }
 @media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
@@ -155,5 +148,85 @@
     overflow: hidden;
     width: 100%;
     height: 100vh;
+  }
+  @keyframes moveTwo {
+    from {
+      top: 25%;
+    }
+    to {
+      top: 42%;
+    }
+  }
+  .infoHeader {
+    position: absolute;
+    z-index: 11;
+    left: 3%;
+    top: 25%;
+    animation: moveTwo;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-delay: 5s;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .headerLogo {
+    animation: none;
+    height: 80px;
+  }
+
+  .infoHeader {
+    position: absolute;
+    z-index: 11;
+    left: 3%;
+    top: 10%;
+    animation: moveTwo;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-delay: 5s;
+  }
+
+  .headerText {
+    display: none;
+  }
+  .bottonsHeader {
+    bottom: 77%;
+    margin-left: 3%;
+  }
+  .play {
+    font-size: 1.1em;
+    padding: 0.7rem;
+  }
+  .logoPlay {
+    height: 1em;
+  }
+  .control {
+    width: 45px;
+    height: 45px;
+    top: 19%;
+  }
+  .iconControl {
+    width: 55%;
+  }
+  .container-header {
+    height: 29vh;
+  }
+
+  @keyframes move {
+    from {
+      height: 100px;
+    }
+    to {
+      height: 80px;
+    }
+  }
+
+  @keyframes moveTwo {
+    from {
+      top: 5%;
+    }
+    to {
+      top: 10%;
+    }
   }
 }

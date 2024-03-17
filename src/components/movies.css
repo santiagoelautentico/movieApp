@@ -1,4 +1,9 @@
 * {
+  text-decoration: none;
+  color: white;
+  list-style: none;
+}
+/* * {
   list-style: none;
 }
 .listMovies {
@@ -10,4 +15,68 @@
   height: 200px;
   object-fit: cover;
   background-position: center;
+} */
+.container-cards {
+  padding-left: 3%;
+  z-index: 100000;
+  position: relative;
+}
+.container-clasic {
+  background: linear-gradient(rgba(0, 0, 0, 0), rgb(0, 0, 0) 30%);
+}
+.container-anime {
+  background-color: black;
+  padding-block: 2em;
+}
+.listMovies {
+  display: grid;
+  grid-auto-columns: 18%;
+  grid-auto-flow: column;
+  gap: 1rem;
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+}
+.card {
+  border-radius: 5px;
+  display: grid;
+  gap: 1rem;
+  grid-template-rows: min-content;
+  background: black;
+}
+.image {
+  inline-size: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+.icons-container {
+  display: flex;
+  gap: 1rem;
+}
+.details-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 1rem;
+}
+.icon {
+  inline-size: 2.5rem;
+}
+.yearMovie {
+  padding: 1rem;
+}
+.snaps-inline {
+  scroll-snap-type: inline mandatory;
+}
+.snaps-inline > * {
+  scroll-snap-align: start;
+}
+@media only screen and (max-width: 600px) {
+  .listMovies {
+    display: grid;
+    grid-auto-columns: 18%;
+    grid-auto-flow: column;
+    gap: 12rem;
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+  }
 }
