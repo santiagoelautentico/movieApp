@@ -38,7 +38,10 @@ body::-webkit-scrollbar{
   -webkit-appearance: none;
 }
 .container-clasic {
-  background: linear-gradient(rgba(0, 0, 0, 0), rgb(0, 0, 0) 30%);
+  background: linear-gradient(rgba(6, 6, 6, 0), rgb(4, 4, 4) 30%);
+}
+.container-secondary {
+  background-color: rgb(4, 4, 4);
 }
 .listMovies {
   display: grid;
@@ -53,7 +56,6 @@ body::-webkit-scrollbar{
   display: grid;
   gap: 1rem;
   grid-template-rows: min-content;
-  background: black;
 }
 .image {
   inline-size: 100%;
@@ -94,7 +96,7 @@ body::-webkit-scrollbar{
 .card:hover{
   transform: scale(1.2);
   position: absolute;
-  transition: 200ms ease;
+  background-color: #1a2edd;
 }
 .card:hover > .image{
   width: 20rem;

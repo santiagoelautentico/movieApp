@@ -40,8 +40,10 @@ export function Header() {
           </button>
           <button className="play play_more">
             <div className="topButtonColor2"></div>
+            <div className="rigthButtonColor2"></div>
             More info
             <div className="bottomButtonColor2"></div>
+            <div className="leftButtonColor2"></div>
           </button>
         </div>
         <button onClick={handleMuted} className="control">

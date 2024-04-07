@@ -6,7 +6,7 @@ export function Cartoon() {
     "https://private-b5c8a7-moviesapp12.apiary-mock.com/movies/cartoon"
   );
   return (
-    <article className="container-cards container-clasic">
+    <article className="container-cards container-secondary">
       <h2 className="title_category2">ANIMES</h2>
       <div className="listMovies snaps-inline">
         {data?.map((cartoon) => (

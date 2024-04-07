@@ -105,7 +105,7 @@
 .bottomButtonColor {
   position: absolute;
   bottom: 0;
-  background-color: #7d00aa;
+  background-color: #160180;
   width: 100%;
   left: 0;
   height: 5px;
@@ -113,7 +113,7 @@
 .topButtonColor {
   position: absolute;
   top: 0;
-  background-color: #c537f8;
+  background-color: #2c0ec1;
   width: 100%;
   left: 0;
   height: 5px;
