@@ -2,40 +2,8 @@ body {
   background-color: black;
 }
 
-/* .background_home {
-  background: url("/images/backMovie.png");
-  background-size: cover;
-} */
-
 .logoHeader {
   width: 75%;
-}
-/* .infoMovieContainer {
-  width: 45%;
-  padding-left: 3em;
-}
-
-.listMovies {
-  white-space: nowrap;
-  overflow-x: auto;
-  scrollbar-width: none;
-}
-
-.blockCards {
-  margin: auto;
-  padding-left: 5em;
-  overflow: hidden;
-  margin-bottom: 2rem;
-  z-index: 10000;
-  position: relative;
-}
-.blockCards > h2 {
-  padding-bottom: 1em;
-  font-size: 2em;
-  color: white;
-} */
-.clasic-container {
-  background: linear-gradient(#ef040400, #000000fb 30%, #000000, #000000);
 }
 
 .backgroundCharacter {
@@ -43,4 +11,38 @@ body {
 }
 .logo {
   width: 100%;
+}
+.footer {
+  position: relative;
+  height: 20vh;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #1a2edd;
+  align-items: center;
+  display: flex;
+}
+.topBarFooter{
+  position: absolute;
+  top: 1px;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: #2b3eed;
+  height: 0.5rem;
+}
+.bottomBarFooter{
+  position: absolute;
+  bottom: 0;
+  margin: 0; padding: 0;
+  width: 100%;
+  background-color: #1326cf;
+  height: 0.5rem;
+}
+.redesContainer{
+  width: 100%;
+  height: max-content;
+  align-items: center;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
 }

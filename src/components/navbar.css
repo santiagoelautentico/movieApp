@@ -5,6 +5,7 @@
   box-sizing: border-box;
   text-decoration: none;
 }
+
 .hamburguer {
   position: relative;
   display: block;
@@ -66,7 +67,7 @@
 .logoNav {
   position: absolute;
   top: 2.8rem;
-  width: 3%;
+  width: 2%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -142,7 +143,7 @@ nav ul li a {
   .logoNav {
     position: absolute;
     top: 2.8rem;
-    width: 8%;
+    width: 4%;
     left: 10%;
     transform: translate(-50%, -50%);
   }

@@ -1,6 +1,7 @@
 import { useFetch } from "../../useFetch";
 import { useParams } from "react-router-dom";
 import { Recomended } from "../Recomended";
+import { Footer } from "../footer";
 import "../watchMovie.css";
 import "../global.css";
 export function AnimesMovies() {
@@ -50,6 +51,7 @@ export function AnimesMovies() {
           })}
         </section>
       </div>
+      <Footer />
     </>
   );
 }

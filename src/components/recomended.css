@@ -13,6 +13,7 @@
 .recomended_title {
   font-size: 2em;
   font-weight: 400;
+  color: black;
 }
 .recomended_img {
   width: 10rem;
@@ -21,6 +22,10 @@
 }
 .recomended_movieTitle {
   font-weight: 400;
+}
+.recomended_movieSubtitle,
+.recomended_movieTitle {
+  color: black;
 }
 .movie_block {
   display: flex;

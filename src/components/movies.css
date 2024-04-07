@@ -1,3 +1,4 @@
+
 * {
   text-decoration: none;
   color: white;
@@ -16,17 +17,28 @@
   object-fit: cover;
   background-position: center;
 } */
+
+.title_category {
+  font-size: 2em;
+  padding-block: 1em;
+}
+.title_category2 {
+  font-size: 2em;
+  margin-bottom: 1em;
+}
 .container-cards {
   padding-left: 3%;
-  z-index: 100000;
+  z-index: 10;
   position: relative;
+}
+.listMovies::-webkit-scrollbar{
+  -webkit-appearance: none;
+}
+body::-webkit-scrollbar{
+  -webkit-appearance: none;
 }
 .container-clasic {
   background: linear-gradient(rgba(0, 0, 0, 0), rgb(0, 0, 0) 30%);
-}
-.container-anime {
-  background-color: black;
-  padding-block: 2em;
 }
 .listMovies {
   display: grid;
@@ -52,7 +64,7 @@
   display: flex;
   gap: 1rem;
 }
-.details-container {
+.top-details {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -70,13 +82,43 @@
 .snaps-inline > * {
   scroll-snap-align: start;
 }
+
+.menuItem{
+  opacity: 0;
+  transition: 100ms ease-in;
+}
+.card:hover > .menuItem {
+  opacity: 1;
+  height: max-content;
+}
+.card:hover{
+  transform: scale(1.2);
+  position: absolute;
+  transition: 200ms ease;
+}
+.card:hover > .image{
+  width: 20rem;
+}
+
 @media only screen and (max-width: 600px) {
   .listMovies {
     display: grid;
-    grid-auto-columns: 18%;
+    grid-auto-columns: 35%;
     grid-auto-flow: column;
-    gap: 12rem;
     overflow-x: auto;
     overscroll-behavior-inline: contain;
   }
-}
+
+  .menuItem{
+    display: none;
+  }
+
+  .card:hover{
+    transform: scale(1);
+    position: relative;
+  }
+  .card:hover > .image{
+    width: 100%;
+  }
+
+} 
