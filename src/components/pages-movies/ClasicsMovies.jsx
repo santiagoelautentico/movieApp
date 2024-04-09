@@ -40,9 +40,11 @@ export function ClasicsMovies() {
                   <p className="plot">{movie.synopsis}</p>
                   <button className="play2">
                     <div className="topButtonColor"></div>
+                    <div className="leftButtonColor"></div>
                     <img src="/images/play.png" className="logoPlay2" alt="" />
                     PLAY
                     <div className="bottomButtonColor"></div>
+                    <div className="rigthButtonColor"></div>
                   </button>
                 </section>
                 <Recomended className="recomended"></Recomended>

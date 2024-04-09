@@ -34,9 +34,11 @@ export function Header() {
         <div className="bottonsHeader">
           <button className="play play-violet">
             <div className="topButtonColor"></div>
+            <div className="leftButtonColor"></div>
             <img src="/images/play.png" className="logoPlay" alt="" />
             PLAY
             <div className="bottomButtonColor"></div>
+            <div className="rigthButtonColor"></div>
           </button>
           <button className="play play_more">
             <div className="topButtonColor2"></div>

@@ -5,13 +5,13 @@ export function Footer() {
       <div className="topBarFooter" />
       <div className="redesContainer">
         <a href="">
-          <img src="/images/instagram.png" alt="instagram Icon" />
+          <img src="/images/insta.png" alt="instagram Icon" />
         </a>
         <a href="">
           <img src="/images/behance.png" alt="" />
         </a>
         <a href="">
-          <img src="/images/linkedin.png" alt="" />
+          <img src="/images/linke.png" alt="linkedin" />
         </a>
         <a href="">
           <img src="" alt="" />

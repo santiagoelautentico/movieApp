@@ -23,7 +23,7 @@
 .topBar {
   display: flex;
   justify-content: space-between;
-  background-color: #a70fdd;
+  background-color: #1a2edd;
   padding: 0.8rem;
   margin-block: 0.5rem;
   border: black solid 3px;
@@ -38,7 +38,7 @@
 }
 
 .art_container {
-  background-color: #c537f8;
+  background-color: #1a2edd;
   border: black solid 4px;
   width: 700px;
   height: 470px;
@@ -67,15 +67,15 @@
   width: 3px;
   left: 0;
   bottom: 0;
-  background-color: #7d00aa;
+  background-color: #091689;
 }
 .detailTop {
-  background-color: #c82dff;
+  background-color: #0560ff;
   top: 0;
   left: 0;
 }
 .detailBottom {
-  background-color: #7d00aa;
+  background-color: #091689;
   bottom: 0;
   left: 0;
 }
@@ -91,7 +91,7 @@
 .play2 {
   height: 1.8em;
   font-size: 2em;
-  background-color: #a70fdd;
+  background-color: #1a2edd;
   color: white;
   border: solid 2px black;
   width: 30%;
@@ -105,7 +105,7 @@
 .bottomButtonColor {
   position: absolute;
   bottom: 0;
-  background-color: #160180;
+  background-color: #091689;
   width: 100%;
   left: 0;
   height: 5px;
@@ -113,10 +113,24 @@
 .topButtonColor {
   position: absolute;
   top: 0;
-  background-color: #2c0ec1;
+  background-color: #0560ff;
   width: 100%;
   left: 0;
   height: 5px;
+}
+.rigthButtonColor, .leftButtonColor {
+  position: absolute;
+  height: 100%;
+  width: 0.3rem;
+}
+.rigthButtonColor{
+  right: 0;
+  background-color: #091689;
+}
+.leftButtonColor{
+  left: 0;
+  top: 0;
+  background-color: #0560ff;
 }
 @media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
   .art_container {
