@@ -59,7 +59,7 @@
   background-color: #ebeaea;
   position: absolute;
 }
-.rigthButtonColor2{
+.rigthButtonColor2 {
   width: 5px;
   height: 100%;
   top: 0;
@@ -67,7 +67,7 @@
   background-color: #888888;
   position: absolute;
 }
-.leftButtonColor2{
+.leftButtonColor2 {
   width: 5px;
   height: 100%;
   top: 0;
@@ -105,8 +105,7 @@
   color: white;
   width: 50%;
   font-size: 1.5em;
-  animation: text;
-  animation-duration: 0.5ms ease;
+  animation: text 1s;
   animation-delay: 5s;
   animation-fill-mode: forwards;
 }
@@ -151,11 +150,10 @@
 
 @keyframes text {
   from {
-    visibility: visible;
+    opacity: 1;
   }
   to {
-    visibility: hidden;
-    display: none;
+    opacity: 0;
   }
 }
 .container-header {
@@ -168,12 +166,31 @@
     width: 100%;
     height: 100vh;
   }
+  .bottonsHeader {
+    position: absolute;
+    bottom: 25%;
+    margin-left: 3%;
+    display: flex;
+    gap: 2em;
+    font-size: 0.8em;
+  }
   @keyframes moveTwo {
     from {
       top: 25%;
     }
     to {
-      top: 42%;
+      top: 47%;
+    }
+  }
+  .headerLogo {
+    height: 215px;
+  }
+  @keyframes move {
+    from {
+      height: 215px;
+    }
+    to {
+      height: 175px;
     }
   }
   .infoHeader {
